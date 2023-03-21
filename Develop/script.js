@@ -7,7 +7,6 @@ var confirmUp;
 var confirmNum;
 var confirmSpec;
 var passChar = [];
-
 var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -15,8 +14,6 @@ var toUpper = function (x) {  // Convert to upper case
   return x.toUpperCase();
 };
 var upper = lower.map(toUpper);
-
-
 
 
 // Add event listener to generate button
@@ -76,8 +73,6 @@ function generatePassword() {
         console.log("The password right now is: " + passGen)
       }
       return passGen;
-
-
 }
 
 
@@ -87,5 +82,4 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
